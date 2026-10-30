@@ -248,7 +248,7 @@ def main() -> int:
 
     print(f"Building {PACKAGE_NAME}@{version}")
     release(build_launcher_package(version, out), "latest", registry, publish, args.provenance)
-    print("Done.")
+    print(f"Done: {len(PLATFORMS) + 1} packages in {out}")
     return 0
 
 
