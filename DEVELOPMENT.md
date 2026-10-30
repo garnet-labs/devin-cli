@@ -44,3 +44,7 @@ each new manifest version.
 
 `assets/devin-cli.gif` is a [vhs](https://github.com/charmbracelet/vhs)
 recording of the stable binary; re-record it when the UI changes noticeably.
+
+## Dry runs in CI
+
+Pull requests build every package with `--no-publish --out dist`; nothing is published from a pull request.
